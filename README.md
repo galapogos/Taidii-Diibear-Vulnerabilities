@@ -21,6 +21,15 @@ The vulnerability was responsibly disclosed to Taidii, who has acknowledged and 
 05 Mar 2021 - All 3 vulnerabilities fixed in Taidii Diibear and all derivatives on Google Play store.  
 15 Mar  2021 - Updated CVE with vulnerability details.  
 
+### Taidii Diibear description
+Taidii Diibear (com.taidii.diibear) is an integrated teacher-parent communication platform that provides the following features (as stated on the Taidii website):  
+- Ensures private communication between teachers and parents  
+- Biometric security ensuring safety and security of child  
+- CLOUD based application always ensures accessible information  
+- Communicates information to parents in real-time  
+
+Taidii Diibear is used by several childcare facilities (com.taidii.diibear.\*) which, as of vulnerability disclosure date, has tens of thousands of installed according to Google Play  
+
 **CVE-2020-35454**  
 The application was configured to have Android backup enabled. This resulted in two instances of sensitive data disclosure where plaintext sensitive data was included in the Android generated backup.  
 First, it was discovered that the application stores sensitive data in plaintext within the Shared Preferences, thereby disclosing the following sensitive information in plaintext:  
@@ -33,7 +42,7 @@ In addition, it was discovered that the application stores sensitive data in pla
 - Student profile picture
 - Personal data such as birth region, center type, date of birth, enter date, full name, gender, leave data, local index, nickname, registration number, and school count  
 
-With the disclosure of the above sensitive data, an attacker has full access to the victim’s account, thereby resulting in a full compromise of the account.  
+An attacker with physical access to the device and no prior access to the app can access this sensitive data via Android backup, and use it to gain full access to the victim’s account, thereby resulting in a full compromise of the account.  
 
 **CVSS 3.0 Scoring**: 7.0 (AV:P/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N)
 
@@ -54,8 +63,7 @@ An attacker with local read/write access to the device and no prior access to th
 **CVSS 3.0 Scoring**: 9.0 (AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N)
 
 **CVE-2020-35456**  
-The application performs excessive logging, thereby disclosing private chat messages in plaintext. This includes publicly accessible links to private media files such as images and PDF
-documents.
+The application performs excessive logging, thereby disclosing private chat messages in plaintext. This includes publicly accessible links to private media files such as images and PDF documents.
 These application logs are readily accessible by an attacker with local access to the device, and the private chat messages were revealed when the victim navigates to the “Message” activity.
 
 **CVSS 3.0 Scoring**: 5.3 (AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N)

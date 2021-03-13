@@ -3,7 +3,7 @@ Author: <ins>Goi</ins> Si Han
 
 This repository describes 3 vulnerabilities that were discovered in the Taidii Diibear Android application v2.4.0 and all its derivatives (com.taidii.diibear.\*). While not tested on other versions, the vulnerability likely exists in versions 2.4.0 and lower.
 
-The vulnerability was responsibly disclosed to Taidii, who has since remediated the vulnerability in v2.5.0. The vulnerabilities were filed as CVE-2020-35454, CVE-2020-35455 and CVE-2020-35456 after responsible disclosure to Taidii.
+The vulnerability was responsibly disclosed to Taidii, who has acknowledged and remediated the vulnerabilities in v2.5.0. The vulnerabilities were filed as CVE-2020-35454, CVE-2020-35455 and CVE-2020-35456 after responsible disclosure to Taidii.
 
 ### Vulnerability disclosure timeline
 25 Nov 2020 - Emailed service@taidii.com to request for appropriate contact for vulnerability disclosure, with no response.  

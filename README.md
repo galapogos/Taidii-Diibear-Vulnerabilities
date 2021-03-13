@@ -27,7 +27,7 @@ First, it was discovered that the application stores sensitive data in plaintext
 - User credentials (username and password)
 - Authentication token
 - Center ID
-- Medication information
+- Medication information  
 In addition, it was discovered that the application stores sensitive data in plaintext within the sqlite database, thereby disclosing the following sensitive information in plaintext:  
 - Student profile picture
 - Personal data such as birth region, center type, date of birth, enter date, full name, gender, leave data, local index, nickname, registration number, and school count  

@@ -21,7 +21,7 @@ The vulnerability was responsibly disclosed to Taidii, who has acknowledged and 
 05 Mar 2021 - All 3 vulnerabilities fixed in Taidii Diibear and all derivatives on Google Play store.  
 15 Mar  2021 - Updated CVE with vulnerability details.  
 
-**CVE-2020-35454**
+**CVE-2020-35454**  
 The application was configured to have Android backup enabled. This resulted in two instances of sensitive data disclosure where plaintext sensitive data was included in the Android generated backup.  
 First, it was discovered that the application stores sensitive data in plaintext within the Shared Preferences, thereby disclosing the following sensitive information in plaintext:  
 - User credentials (username and password)
@@ -34,7 +34,7 @@ In addition, it was discovered that the application stores sensitive data in pla
 With the disclosure of the above sensitive data, an attacker has full access to the victim’s account, thereby resulting in a full compromise of the account.  
 #CVSS 3.0 Scoring#: 7.0 (AV:P/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N)
 
-**CVE-2020-35455**
+**CVE-2020-35455**  
 Two instances of insecure data storage were discovered.  
 First, it was discovered that the application stores sensitive data in plaintext within the Shared Preferences, thereby disclosing the following sensitive information in plaintext:  
 - User credentials (username and password)  
@@ -47,7 +47,7 @@ In addition, it was discovered that the application stores sensitive data in pla
 An attacker with local read/write access to the device and no prior access to the app can access this sensitive data, and use it to gain full access to the victim’s account, thereby resulting in a full compromise of the account.  
 #CVSS 3.0 Scoring#: 9.0 (AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N)
 
-**CVE-2020-35456**
+**CVE-2020-35456**  
 The application performs excessive logging, thereby disclosing private chat messages in plaintext. This includes publicly accessible links to private media files such as images and PDF
 documents.
 These application logs are readily accessible by an attacker with local access to the device, and the private chat messages were revealed when the victim navigates to the “Message” activity.

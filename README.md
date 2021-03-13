@@ -28,7 +28,7 @@ Taidii Diibear (com.taidii.diibear) is an integrated teacher-parent communicatio
 - CLOUD based application always ensures accessible information  
 - Communicates information to parents in real-time  
 
-Taidii Diibear is used by several childcare facilities (com.taidii.diibear.\*) which, as of vulnerability disclosure date, has tens of thousands of installed according to Google Play  
+Taidii Diibear is used by several childcare facilities (com.taidii.diibear.\*) which, as of vulnerability disclosure date, has tens of thousands of installs according to Google Play  
 
 **CVE-2020-35454**  
 The application was configured to have Android backup enabled. This resulted in two instances of sensitive data disclosure where plaintext sensitive data was included in the Android generated backup.  

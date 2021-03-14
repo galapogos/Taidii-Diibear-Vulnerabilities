@@ -30,7 +30,7 @@ Taidii Diibear (com.taidii.diibear) is an integrated teacher-parent communicatio
 
 Taidii Diibear is used by several childcare facilities (com.taidii.diibear.\*) which, as of vulnerability disclosure date, has tens of thousands of installs according to Google Play  
 
-**CVE-2020-35454**  
+### CVE-2020-35454  
 The application was configured to have Android backup enabled. This resulted in two instances of sensitive data disclosure where plaintext sensitive data was included in the Android generated backup.  
 First, it was discovered that the application stores sensitive data in plaintext within the Shared Preferences, thereby disclosing the following sensitive information in plaintext:  
 - User credentials (username and password)
@@ -46,7 +46,7 @@ An attacker with physical access to the device and no prior access to the app ca
 
 **CVSS 3.0 Scoring**: 7.0 (AV:P/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N)
 
-**CVE-2020-35455**  
+### CVE-2020-35455  
 Two instances of insecure data storage were discovered.  
 First, it was discovered that the application stores sensitive data in plaintext within the Shared Preferences, thereby disclosing the following sensitive information in plaintext:  
 - User credentials (username and password)  
@@ -62,7 +62,7 @@ An attacker with local read/write access to the device and no prior access to th
 
 **CVSS 3.0 Scoring**: 9.0 (AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N)
 
-**CVE-2020-35456**  
+### CVE-2020-35456  
 The application performs excessive logging, thereby disclosing private chat messages in plaintext. This includes publicly accessible links to private media files such as images and PDF documents.
 These application logs are readily accessible by an attacker with local access to the device, and the private chat messages were revealed when the victim navigates to the “Message” activity.
 

@@ -44,7 +44,7 @@ In addition, it was discovered that the application stores sensitive data in pla
 
 An attacker with physical access to the device and no prior access to the app can access this sensitive data via Android backup, and use it to gain full access to the victim’s account, thereby resulting in a full compromise of the account.  
 
-**CVSS 3.0 Scoring**: 7.0 (AV:P/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N)
+**CVSS 3.1 Scoring**: 6.8 (CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H)
 
 ### CVE-2020-35455  
 Two instances of insecure data storage were discovered.  
@@ -60,10 +60,10 @@ In addition, it was discovered that the application stores sensitive data in pla
 
 An attacker with local read/write access to the device and no prior access to the app can access this sensitive data, and use it to gain full access to the victim’s account, thereby resulting in a full compromise of the account.  
 
-**CVSS 3.0 Scoring**: 9.0 (AV:L/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:N)
+**CVSS 3.1 Scoring**: 7.8 (CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H)
 
 ### CVE-2020-35456  
 The application performs excessive logging, thereby disclosing private chat messages in plaintext. This includes publicly accessible links to private media files such as images and PDF documents.
 These application logs are readily accessible by an attacker with local access to the device, and the private chat messages were revealed when the victim navigates to the “Message” activity.
 
-**CVSS 3.0 Scoring**: 5.3 (AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N)
+**CVSS 3.1 Scoring**: 5.5 (CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N)
